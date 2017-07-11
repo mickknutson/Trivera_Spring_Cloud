@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>io.projectreactor</groupId>
+  <artifactId>reactor-bom</artifactId>
+  <version>Aluminium-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20170404.104748</timestamp>
+      <buildNumber>22</buildNumber>
+    </snapshot>
+    <lastUpdated>20170404104753</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>txt.asc</extension>
+        <value>Aluminium-BUILD-20170404.104748-22</value>
+        <updated>20170404104748</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom.asc</extension>
+        <value>Aluminium-BUILD-20170404.104748-22</value>
+        <updated>20170404104748</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>Aluminium-BUILD-20170404.104748-22</value>
+        <updated>20170404104748</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>txt</extension>
+        <value>Aluminium-BUILD-20170404.104748-22</value>
+        <updated>20170404104748</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -1,0 +1,35 @@
+#------------------------------------------------------------------------------#
+# Application Properties #
+# inside ./src/main/resources/application.yml
+#------------------------------------------------------------------------------#
+# Turn on debug logging to show ConditionEvaluationReport :
+debug: true
+
+# Tomcat Server Port:
+server:
+  port: 8888
+
+management:
+  security:
+    enabled: false
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+#          uri: http://admin:admin@localhost:8888/cloud_config_repo
+          uri: ${HOME}/cloud_config_repo
+          clone-on-start: true
+        bootstrap: false
+      fail-fast: true
+
+# Create BASIC-Authentication credentials
+security:
+  user:
+    name: user1
+    password: s3cr3t
+  basic:
+    enabled: false
+
+#------------------------------------------------------------------------------#

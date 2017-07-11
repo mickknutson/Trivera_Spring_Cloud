@@ -5,7 +5,8 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+# We want JAR files for this project
+# *.jar
 *.war
 *.ear
 
