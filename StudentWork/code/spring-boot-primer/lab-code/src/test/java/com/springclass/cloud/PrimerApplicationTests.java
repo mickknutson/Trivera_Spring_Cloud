@@ -28,6 +28,8 @@ public class PrimerApplicationTests {
 	// for Integration testing:
 	@LocalServerPort
 	private int port;
+	
+	private String host = "http://localhost";
 
 	private TestRestTemplate testRestTemplate = new TestRestTemplate();
 	
@@ -50,7 +52,7 @@ public class PrimerApplicationTests {
 	}
 
 	private String createURLWithPort(String uri) {
-		return "http://localhost:" + port + uri;
+		return host  +":"+ port + uri;
 	}
 
 

@@ -1,9 +1,8 @@
 package com.springclass.cloud.client;
 
-import com.springclass.cloud.BasicAuthRestTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.boot.test.web.client.TestRestTemplate;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertThat;
@@ -22,7 +21,7 @@ public class TestClient {
 
 	    // We need to use a custom RestTemplate that will allow us to send BASIC Authentication
         // Credentials:
-		RestTemplate restTemplate = new BasicAuthRestTemplate("user1", "s3cr3t");
+		TestRestTemplate restTemplate = new TestRestTemplate("user1", "s3cr3t");
 
 		// First get user, and there should be none.
 		String result = restTemplate.getForObject(uri, String.class);

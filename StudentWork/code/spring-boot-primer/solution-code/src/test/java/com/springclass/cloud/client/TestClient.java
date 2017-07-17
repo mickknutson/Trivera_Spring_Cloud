@@ -31,7 +31,6 @@ public class TestClient {
 	    RestTemplate restTemplate = new RestTemplate();
 		String result = restTemplate.getForObject(usersUri + "/"+firstName+"/"+lastName, String.class);
 		
-		log.info("Result: {}", result);
 		String expected = "{\"firstName\":\""+firstName+"\",\"lastName\":\""+lastName+"\"}";
 		assertThat(result, containsString(expected));
 		

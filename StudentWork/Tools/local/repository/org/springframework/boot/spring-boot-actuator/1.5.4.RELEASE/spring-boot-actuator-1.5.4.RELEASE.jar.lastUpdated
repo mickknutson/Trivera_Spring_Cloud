@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jul 13 09:45:25 MDT 2017
+http\://repo.spring.io/ext-release-local/.lastUpdated=1499960724099
+http\://repo.spring.io/ext-release-local/.error=
+http\://repo.spring.io/milestone/.lastUpdated=1499960725978
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1499960723986
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework.boot\:spring-boot-actuator\:jar\:1.5.4.RELEASE from/to central (https\://repo.maven.apache.org/maven2)\: /Users/mickknutson/Documents/SYNCH/projects/Trivera/SpringCloud/Trivera_Spring_Cloud_Project/Trivera_Spring_Cloud/StudentWork/Tools/local/repository/org/springframework/boot/spring-boot-actuator/1.5.4.RELEASE/aether-757bfe36-6be2-422c-9d2f-b785a3a91783-spring-boot-actuator-1.5.4.RELEASE.jar-in-progress (No such file or directory)

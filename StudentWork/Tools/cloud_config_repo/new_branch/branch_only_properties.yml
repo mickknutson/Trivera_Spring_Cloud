@@ -1,0 +1,6 @@
+user:
+  role: YAML new_branch ONLY properties
+message: Only new_branch has access to these properties
+name: Chuck Norris
+branch:
+  message: No other branch can see this message

@@ -1,3 +1,6 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon Jul 10 18:34:19 MDT 2017
+#Thu Jul 13 09:45:14 MDT 2017
+spring-boot-maven-plugin-1.5.4.RELEASE.jar>central=
 spring-boot-maven-plugin-1.5.4.RELEASE.jar>spring-milestones=
+spring-boot-maven-plugin-1.5.4.RELEASE.pom>central=
+spring-boot-maven-plugin-1.5.4.RELEASE.pom>spring-milestones=

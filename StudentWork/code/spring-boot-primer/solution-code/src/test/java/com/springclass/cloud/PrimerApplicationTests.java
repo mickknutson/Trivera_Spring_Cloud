@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 
 /**
@@ -18,7 +19,9 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
  * @see {@link TestClient}
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@SpringBootTest(
+		webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT
+)
 
 public class PrimerApplicationTests {
 
@@ -28,11 +31,14 @@ public class PrimerApplicationTests {
 	// for Integration testing:
 	@LocalServerPort
 	private int port;
+	
+	private String host = "http://localhost";
 
 	private TestRestTemplate testRestTemplate = new TestRestTemplate();
+	private RestTemplate restTemplate = new RestTemplate();
 	
 	@Test
-	public void test_EchoUser() {
+	public void test_EchoUser_testRestTemplate() {
 	    String firstName = "Chuck";
 	    String lastName = "Norris";
 		
@@ -40,7 +46,23 @@ public class PrimerApplicationTests {
 				createURLWithPort("/"+firstName+"/"+lastName), 
 				String.class);
 		
-		log.info("Result: {}", result);
+		String expected = "{\"firstName\":\""+firstName+"\",\"lastName\":\""+lastName+"\"}";
+		assertThat(result, containsString(expected));
+		
+		log.info("*** Successfully echoed a User ("+firstName+" "+lastName+") through REST ***");
+
+	}
+
+	
+	// TODO Does not work with Boot Integeration tests:
+	@Test
+	public void test_EchoUser_restTemplate() {
+	    String firstName = "Chuck";
+	    String lastName = "Norris";
+		
+		String result = restTemplate.getForObject(
+				"http://localhost:8888/"+firstName+"/"+lastName, 
+				String.class);
 		
 		String expected = "{\"firstName\":\""+firstName+"\",\"lastName\":\""+lastName+"\"}";
 		assertThat(result, containsString(expected));
@@ -50,7 +72,7 @@ public class PrimerApplicationTests {
 	}
 
 	private String createURLWithPort(String uri) {
-		return "http://localhost:" + port + uri;
+		return host  +":"+ port + uri;
 	}
 
 
