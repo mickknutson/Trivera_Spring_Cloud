@@ -5,7 +5,7 @@
 .mtj.tmp/
 
 # Package Files #
-# We want JAR files for this project
+# We want JAR files for this project because we host a local repository
 # *.jar
 *.war
 *.ear

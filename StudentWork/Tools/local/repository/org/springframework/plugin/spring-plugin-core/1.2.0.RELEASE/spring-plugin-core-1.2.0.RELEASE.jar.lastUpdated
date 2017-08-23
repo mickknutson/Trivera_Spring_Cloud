@@ -1,5 +1,7 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon Jul 10 18:35:11 MDT 2017
+#Wed Aug 23 07:52:01 MDT 2017
 https\://repo.spring.io/snapshot/.error=
-https\://repo.spring.io/milestone/.lastUpdated=1499733311571
-https\://repo.spring.io/snapshot/.lastUpdated=1499733297999
+https\://repo.spring.io/milestone/.error=Could not transfer artifact org.springframework.plugin\:spring-plugin-core\:jar\:1.2.0.RELEASE from/to spring-milestones (https\://repo.spring.io/milestone)\: /Users/mickknutson/Documents/SYNCH/projects/Trivera/SpringCloud/Trivera_Spring_Cloud_Project/Trivera_Spring_Cloud/StudentWork/Tools/local/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/aether-b7fd33e2-8c6a-4466-8a98-576925b778c2-spring-plugin-core-1.2.0.RELEASE.jar-in-progress (No such file or directory)
+https\://repo.maven.apache.org/maven2/.lastUpdated=1503496321770
+https\://repo.spring.io/snapshot/.lastUpdated=1503496315760
+@default-spring-milestones-https\://repo.spring.io/milestone/.lastUpdated=1503496321415

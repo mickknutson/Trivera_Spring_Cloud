@@ -7,6 +7,31 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertThat;
 
+/**
+ * The following are some variations to pull valid configuration:
+ * Without authentication:
+ * <pre>
+ * curl http://localhost:8888/config-client/development/
+ * curl http://localhost:8888/config-client/development/new_branch/
+ * curl http://localhost:8888/config-client/development/v.1.0
+ * curl http://localhost:8888/config-client/development/v.2.0
+ * curl http://localhost:8888/config-client/v.2.0
+ * </pre>
+ * 
+ * With BASIC authentication:
+ * <pre>
+ * curl http://user1:s3cr3t@localhost:8888/config-client/development/
+ * curl http://user1:s3cr3t@localhost:8888/config-client/development/new_branch/
+ * curl http://user1:s3cr3t@localhost:8888/config-client/development/v.1.0
+ * curl http://user1:s3cr3t@localhost:8888/config-client/development/v.2.0
+ * curl http://user1:s3cr3t@localhost:8888/config-client/v.2.0
+ * </pre>
+ * 
+ * @author mickknutson
+ * 
+ * TODO: Need to enable @ConfigurationProperties
+ *
+ */
 public class TestClient {
 
 	private static final Logger log = LoggerFactory.getLogger(TestClient.class);

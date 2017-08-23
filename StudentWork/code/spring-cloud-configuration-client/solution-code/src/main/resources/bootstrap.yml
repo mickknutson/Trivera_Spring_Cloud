@@ -7,16 +7,20 @@
 spring:
   cloud:
     config:
-      uri: http://user1:s3cr3t@localhost:8888
-      #uri: http://localhost:8888
-      label: new_branch
-
+      #BASIC Auth:
+      #uri: http://user1:s3cr3t@localhost:8888
+      uri: http://localhost:8888
+      #Defaults to Master
+      #label: new_branch
+      label: Master
+      #failFast: true
 
 ## LAB: Add configuration Client information:
 # (note the two spaces in front of "application" and "profile")
-  application:
+spring.application:
     name: config-client
-  profiles:
+    
+spring.profiles:
     active: development
 
 #-----------------------------------------------------------------------------#

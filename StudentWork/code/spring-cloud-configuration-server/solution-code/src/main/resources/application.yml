@@ -9,6 +9,7 @@ debug: false
 server:
   port: 8888
 
+# Actuator:
 management:
   security:
     enabled: false
@@ -21,10 +22,8 @@ spring:
     config:
       server:
         git:
-          uri: ${HOME}/cloud_config_repo
-          clone-on-start: true
-        bootstrap: false
-      fail-fast: true
+          uri: file:///${HOME}/cloud_config_repo
+          
 
 ## LAB: Create BASIC-Authentication credentials
 security:

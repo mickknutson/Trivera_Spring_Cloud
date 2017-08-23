@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Aug 07 15:21:38 MDT 2017
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1502140898491
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.commons\:commons-parent\:pom\:42 from/to central (https\://repo.maven.apache.org/maven2)\: /Users/mickknutson/Documents/SYNCH/projects/Trivera/SpringCloud/Trivera_Spring_Cloud_Project/Trivera_Spring_Cloud/StudentWork/Tools/local/repository/org/apache/commons/commons-parent/42/aether-9ce9b0e4-b472-4c1d-ad20-acbf0fed964d-commons-parent-42.pom-in-progress (No such file or directory)

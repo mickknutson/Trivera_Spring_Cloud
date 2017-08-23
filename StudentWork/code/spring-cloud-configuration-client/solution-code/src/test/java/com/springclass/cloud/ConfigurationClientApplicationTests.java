@@ -46,7 +46,7 @@ public class ConfigurationClientApplicationTests {
 		//String expected = "/validate result: 'role': 'noRole', 'name': 'Foo Bar', 'message': 'Hello message'";
 
 		// LAB: "master" branch with BASIC Authentication enabled result AND client IS authorized:
-		String expected = "/validate result: 'role': 'YAML BRANCH Developer', 'name': 'Bruce Lee', 'message': 'Welcome to YAML developer profile on new_branch'";
+		String expected = "'role': 'YAML Developer";
 
 		
 		
