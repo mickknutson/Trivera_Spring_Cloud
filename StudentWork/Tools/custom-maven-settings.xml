@@ -23,7 +23,7 @@
     |
     | Mac version of hard coding the path to the Maven local repository:
     -->
-    <localRepository>/Users/mickknutson/Documents/SYNCH/projects/Trivera/SpringCloud/Trivera_Spring_Cloud_Project/Trivera_Spring_Cloud/StudentWork/Tools/local/repository</localRepository>
+    <localRepository>/Users/mickknutson/Documents/workspace/TRIVERA/Trivera_Spring_Cloud/StudentWork/Tools/local/repository</localRepository>
 
     <offline>false</offline>
 

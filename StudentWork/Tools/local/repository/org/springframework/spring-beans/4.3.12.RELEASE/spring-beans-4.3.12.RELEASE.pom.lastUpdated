@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Nov 17 09:50:23 MST 2017
+http\://repo.spring.io/ext-release-local/.lastUpdated=1510937423446
+http\://repo.spring.io/ext-release-local/.error=
+http\://repo.spring.io/milestone/.lastUpdated=1510937423698
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1510937423279
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework\:spring-beans\:pom\:4.3.12.RELEASE from/to central (https\://repo.maven.apache.org/maven2)\: /Users/mickknutson/Documents/workspace/TRIVERA/Trivera_Spring_Cloud/StudentWork/Tools/local/repository/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.pom.part (No such file or directory)
