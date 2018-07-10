@@ -6,7 +6,7 @@
 
 # Package Files #
 # We want JAR files for this project because we host a local repository
-# *.jar
+! *.jar
 *.war
 *.ear
 
@@ -15,6 +15,7 @@ hs_err_pid*
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
 
 ### STS ###
 .apt_generated
